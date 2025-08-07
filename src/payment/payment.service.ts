@@ -5,15 +5,7 @@ import { UnprocessableInstallmentsException } from 'src/erros/unprocessableExcep
 
 @Injectable()
 export class PaymentService {
-  private paymentHistorics: CalculateBillDto[] = [
-    {
-      valor: 1000.0,
-      vencimento: '2025-06-10',
-      data_pagamento: '2025-06-23',
-      parcelas: 3,
-    },
-  ];
-
+  private paymentHistorics: CalculateBillDto[] = [];
   private billsDetails: BillDetailsDto[] = [];
 
   calculateBill(body: CalculateBillDto) {

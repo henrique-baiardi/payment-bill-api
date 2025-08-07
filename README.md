@@ -118,4 +118,4 @@ $ npm i class-transformer
 
 ## Autor
 
-Feito por Henrique Baiardi de Menonça
+Feito por Henrique Baiardi de Mendonça

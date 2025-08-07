@@ -7,12 +7,6 @@ export class PaymentController {
   //
   constructor(private readonly paymentService: PaymentService) {}
 
-  @Get()
-  test() {
-    console.log('Get retornado com sucesso!');
-    return 'Get retornado com sucesso!';
-  }
-
   @Post('/calcular-boleto')
   calcular(@Body() body: CalculateBillDto) {
     return this.paymentService.calculateBill(body);
